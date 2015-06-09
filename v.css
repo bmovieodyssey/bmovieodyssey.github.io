@@ -1,0 +1,81 @@
+body {
+  background-color: #252525;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*back ground video*/
+
+.bv {
+position: fixed;
+top: 0%;
+left: 0%;
+min-width: 640px;
+min-height: 360px;
+width: 100%;
+height: auto;
+z-index: -100;
+}
+
+/*video control css*/
+
+.control {
+  width: 10%;
+  height: auto;
+  max-width: 10%;
+  max-height: 5%;
+  overflow: hidden;
+  z-index: 10;
+  background: #0000FF;
+  display: block;
+}
+/*menu css*/
+
+.menu {
+  margin-left: 89.5%;
+  margin-top: 8%; 
+  display: block;
+  width: auto;
+  height: 60px;
+  position: relative;
+  z-index: 20;
+  background: #0000ff;
+  opacity: 1;
+}
+
+.control{
+  margin: 1%;
+  overflow: hidden;
+
+
+}
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.blink {
+    animation-name: blink;
+    animation: blink 1s step-start 0s infinite;
+    -webkit-animation: blink 1s step-start 0s infinite;
+    -moz-animation:blink 1s step-start 0s infinite;
+}
+
+@-moz-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}

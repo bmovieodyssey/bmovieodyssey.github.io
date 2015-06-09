@@ -21,8 +21,7 @@ z-index: -100;
 /*video control css*/
 
 .control {
-  width: 10%;
-  height: auto;
+  height: 60px;
   max-width: 10%;
   max-height: 5%;
   overflow: hidden;
@@ -30,36 +29,73 @@ z-index: -100;
   background: #0000FF;
   display: block;
 }
-/*menu css*/
+
+.play {
+  height: 35px;
+  position: absolute;
+  z-index: 45;
+
+}
+
+
+
+/*menu style*/
 
 .menu {
-  margin-left: 89.5%;
-  margin-top: 8%; 
-  display: block;
-  width: auto;
-  height: 60px;
+  float: right;
   position: relative;
-  z-index: 20;
-  background: #0000ff;
-  opacity: 1;
+  margin-top: 12%;
 }
+
+.links{
+  list-style-type: none;
+
+}
+.tp {
+  height: 60px;
+}
+
+.mm {
+    height: 30px;
+}
+
+.ab {
+    height: 20px;
+}
+
+.ep {
+    height: 20px;
+}
+
+.ct {
+    height: 20px;
+}
+
+
+/*video control*/
 
 .control{
   margin: 1%;
   overflow: hidden;
 
-
 }
+
+.hide1 {
+  visibility: hidden;
+  display: none;
+}
+
 .hide {
   visibility: hidden;
   display: none;
 }
 
 .blink {
-    animation-name: blink;
-    animation: blink 1s step-start 0s infinite;
-    -webkit-animation: blink 1s step-start 0s infinite;
-    -moz-animation:blink 1s step-start 0s infinite;
+  height: 35px;
+  animation-name: blink;
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+  -moz-animation:blink 1s step-start 0s infinite;
 }
 
 @-moz-keyframes blink {  
@@ -79,3 +115,4 @@ z-index: -100;
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
+

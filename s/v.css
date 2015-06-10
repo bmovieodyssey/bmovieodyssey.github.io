@@ -17,6 +17,7 @@ width: 100%;
 height: auto;
 z-index: -100;
 pointer-events: none;
+background: none
 }
 
 /*video control css*/
@@ -103,6 +104,10 @@ pointer-events: none;
 
 .blink {
   height: 35px;
+  margin-top: 25%;
+  margin-left: 40%;
+  position: absolute;
+  background-color: #0000ff;
   animation-name: blink;
   animation: blink 1s step-start 0s infinite;
   -webkit-animation: blink 1s step-start 0s infinite;

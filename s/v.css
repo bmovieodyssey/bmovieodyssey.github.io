@@ -16,6 +16,7 @@ min-height: 360px;
 width: 100%;
 height: auto;
 z-index: -100;
+pointer-events: none;
 }
 
 /*video control css*/
@@ -37,14 +38,24 @@ z-index: -100;
 
 }
 
+/*episode style*/
 
+.ep1{
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  z-index: 0;
+   visibility: hidden;
+}
 
 /*menu style*/
 
 .menu {
   float: right;
   position: relative;
-  margin-top: 12%;
+  margin-top: 20%;
 }
 
 .links{

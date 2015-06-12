@@ -60,6 +60,56 @@ background: none
 
 /*menu style*/
 
+input[type=checkbox] {
+  border:0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="menutape"] {
+   background: rgba(0,0,255,1);
+    position: absolute;
+    padding: 10px 0 10px 0;
+    left: -140px;
+    width: 140px;
+}
+
+[for="menutape"]:hover {
+    background: rgba(0,0,255,1);
+    color: rgb(0,0,255);
+}
+
+[for="menutape"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="menutape"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+{
+  
+
+
+}
+
 .menu {
   float: right;
   position: relative;
@@ -72,6 +122,7 @@ background: none
 }
 .tp {
   height: 60px;
+  margin-left: 12.5%;
 }
 
 .mm {
@@ -113,7 +164,7 @@ background: none
   height: 35px;
   margin-top: 25%;
   margin-left: 40%;
-  position: absolute;
+  position: fixed;
   background-color: #0000ff;
   animation-name: blink;
   animation: blink 1s step-start 0s infinite;

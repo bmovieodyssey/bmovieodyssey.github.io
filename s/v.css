@@ -40,7 +40,7 @@ background: none
 
 .mute {
   height: 40px;
-  position: fixed;
+  position: absolute;
   margin: 3% 0 0 85%;
 
 

@@ -36,9 +36,15 @@ background: none
   height: 35px;
   position: absolute;
   z-index: 45;
-
 }
 
+.mute {
+  height: 40px;
+  position: fixed;
+  margin: 3% 0 0 85%;
+
+
+}
 /*episode style*/
 
 .ep1{

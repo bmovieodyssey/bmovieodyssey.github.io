@@ -2,6 +2,8 @@ body {
   background-color: #252525;
   margin: 0;
   padding: 0;
+  min-width: 640px;
+  min-height: 360px;
 }
 
 
@@ -17,7 +19,10 @@ width: 100%;
 height: auto;
 z-index: -100;
 pointer-events: none;
-background: none
+background: none;
+overflow: hidden;
+background-position: center center;
+background-size: cover;
 }
 
 /*video control css*/
@@ -39,9 +44,10 @@ background: none
 }
 
 .mute {
-  height: 40px;
-  position: absolute;
-  margin: 3% 0 0 85%;
+  max-height: 40px;
+  max-width: auto;
+  float: right;
+  margin: 3% 0 0 0;
 
 
 }
@@ -111,9 +117,9 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
 }
 
 .menu {
-  float: right;
-  position: relative;
+  position: fixed;
   margin-top: 20%;
+  margin-left: 99%;
 }
 
 .links{
@@ -121,24 +127,22 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
 
 }
 .tp {
-  height: 60px;
+  min-height: 15px;
+  min-width: auto;
   margin-left: 12.5%;
 }
 
-.mm {
-    height: 30px;
-}
-
 .ab {
-    height: 20px;
+    min-height: 30px;
 }
 
 .ep {
-    height: 20px;
+    min-height: 20px;
+    min-width: auto;
 }
 
 .ct {
-    height: 20px;
+    min-height: 30px;
 }
 
 
@@ -190,3 +194,28 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
     100% { opacity: 1.0; }
 }
 
+.other ul {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  top: 96%;
+  list-style: none;
+  text-align: center;
+  z-index: 20;
+}
+
+.other ul li{
+  display: inline-block;
+    margin: 0 2em 0 1em;
+    padding: 0 2em 0 1em;
+    z-index: 50;
+
+}
+
+
+.footer {
+  height: 26px;
+  top: 95%;
+}

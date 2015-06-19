@@ -1,85 +1,233 @@
-<!DOCTYPE html>
-<!-- 
-     _____________________________________________
-	| |_____________________^___________________| |
-	| |+++++++++++++++++++++++++++++++++++++++++| |
-	|-++++++_______+++++++______________________+-|
-	|++++++/       \+++++|                     |++|
-	|+++++/   ____  \++++| The B Movie         |++|
-	|++++|   |    |  |+++| Odyssey             |++|
-	|++++|   |____|  |+++| Design+build by     |++|
-	|+++++\         /++++|  misterkennedy.com  |++|
-	|++++++\_______/+++++|_____________________|++|
-	|__________________________________________|++|
--->
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  min-width: 640px;
+  min-height: 360px;
+}
 
 
-<html>
-<head>
+/*back ground video*/
 
-<title>Straight to Video: The B-Movie Odyssey</title>
-	
-<!--meta tags-->
+.bv {
+position: fixed;
+top: 0%;
+left: 0%;
+min-width: 640px;
+min-height: 360px;
+width: 100%;
+height: auto;
+z-index: -100;
+pointer-events: none;
+background: none;
+overflow: hidden;
+background-position: center center;
+background-size: cover;
+}
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+/*video control css*/
 
+.control {
+  height: 60px;
+  max-width: 10%;
+  max-height: 5%;
+  overflow: hidden;
+  background: #0000FF;
+  display: block;
+}
 
+.play {
+  height: 35px;
+  position: absolute;
+}
 
-<!--js/css-->
-
-<link rel=stylesheet href="s/v.css" type="text/css" >
-</head>
-
-
-<body>
-
-
-<!--video control-->
-		<img src="i/st.svg" class="blink" class="selecttape" >
-		<img src="i/mt.svg" class="mute" >
-		<img src="i/ff.svg" class="hide" >
-		<img src="i/rw.svg" class="hide" >
-
-<!--vcr menu-->
-
-<div class="menu">
-	<ul class="links">
-		<input type="checkbox" id="menutape" rolde="button">
-		<label for="menutape" onclick="">
-	<section><img src="i/tp.svg" class="tp"></section>
-	<span>
-		<li></li>
-		<li><img src="i/et.svg" class="et"></li>
-		<li></li>
-	</span>
-	</ul>
-</div>
-
+.mute {
+  max-height: 35px;
+  width: auto;
+  height: auto;
+  min-height: 15px;
+  float: right;
+  margin: 3% 3% 0 0;
 
 
+}
+/*episode style*/
 
-<!--episodes-->
-<div class="episodes">
-<iframe class="ep1" src="https://www.youtube.com/embed/6a-8TNfeS-Q?wmode=transparent" frameborder="0" allowfullscreen></iframe>
-</div>
+.ep1{
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  visibility: hidden;
+  display: none
+}
+
+/*menu style*/
+
+input[type=checkbox] {
+  border:0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="menutape"] {
+  background: rgba(0,0,255,1);
+  position: absolute;
+  padding: 5px 20px 0 0;
+  left: -170px;
+  width: 140px;
+}
+
+[for="menutape"]:hover {
+  background: rgba(0,0,255,1);
+  color: rgb(0,0,255);
+}
+
+[for="menutape"] span:last-of-type {
+  display: none;
+    isibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="menutape"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+{
+  
 
 
-	<div class="other">
-		<ul>
-			<li><a href="https://www.facebook.com/S2Vodyessy"><img src="i/ab.svg" class="footer"></a></li>
-			<li><a href="mailto:s2vodyssey@gmail.com"><img src="i/ct.svg" class="footer"></a></li>
-			<li><a href="https://www.facebook.com/S2Vodyessy"><img src="i/fb.svg" class="footer"></a></li>		
-			<li><a href="https://instagram.com/straight2video"><img src="i/is.svg" class="footer"></a></li>
-			<li><a href="https://twitter.com/s2vodyssey"><img src="i/tw.svg" class="footer"></a></li>
-			<li><a href="http://thebmovieodyssey.tumblr.com/"><img src="i/tm.svg" class="footer"></a></li>
-		</ul>
-	</div>
-<!--background video-->
-		<video autoplay loop preload="auto" class="bv" poster="https://cloud.githubusercontent.com/assets/12810508/8084653/60f0b9ce-0f49-11e5-9885-a4c74a17affa.jpg">
-			<source src="https://drive.google.com/uc?export=download&id=0Bym_Z2tpj8ECaENJeVpLdXlyd3c" type="video/webm">
-		</video>
+}
 
-</body>
-</html>
+.menu {
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 99%;
+}
+
+.links{
+  list-style-type: none;
+
+}
+.tp {
+  min-height: 15px;
+  min-width: auto;
+  margin-left: 14%;
+}
+
+.ab {
+  min-height: 30px;
+}
+
+.et {
+  height: 30px;
+  min-width: 100%;
+  margin-left: -150%;
+  background-color: #0000ff;
+}
+
+.ct {
+  min-height: 30px;
+}
+
+
+/*video control*/
+
+.control{
+  margin: 1%;
+  overflow: hidden;
+
+}
+
+.hide1 {
+  visibility: hidden;
+  display: none;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+.blink {
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  min-height: 15px;
+  margin-top: 25%;
+  margin-left: 40%;
+  position: absolute;
+  background-color: #0000ff;
+  animation-name: blink;
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+  -moz-animation:blink 1s step-start 0s infinite;
+}
+
+@-moz-keyframes blink {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blink {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+/*footer*/
+
+.other ul {
+  position: fixed;
+  height: 5%;
+  width: 100%;
+  padding: 0;
+  margin-top: 48%;
+  list-style: none;
+  text-align: center;
+
+}
+
+.other ul li{
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+  padding: 0 10px 0 10px;
+}
+
+.other a:hover{
+  color: #000000;
+
+}
+
+.footer {
+  height: 22px;
+  background-color: #0000ff;
+}
+
+
+
+/*glitch*/

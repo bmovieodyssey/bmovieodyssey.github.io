@@ -77,37 +77,37 @@ input[type=checkbox] {
 }
 
 [for="menutape"] {
-   background: rgba(0,0,255,1);
-    position: absolute;
-    padding: 10px 0 10px 0;
-    left: -140px;
-    width: 140px;
+  background: rgba(0,0,255,1);
+  position: absolute;
+  padding: 10px 0 10px 0;
+  left: -140px;
+  width: 140px;
 }
 
 [for="menutape"]:hover {
-    background: rgba(0,0,255,1);
-    color: rgb(0,0,255);
+  background: rgba(0,0,255,1);
+  color: rgb(0,0,255);
 }
 
 [for="menutape"] span:last-of-type {
-    display: none;
-    visibility: hidden;
+  display: none;
+    isibility: hidden;
 }
 
 input[type=checkbox]:checked ~ section {
-    display: block;
-    visibility: visible;
-    width: 100%;
+  display: block;
+  visibility: visible;
+  width: 100%;
 }
 
 input[type=checkbox]:checked ~ [for="menutape"] span:first-of-type {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
-    display: block;
-    visibility: visible;
+  display: block;
+  visibility: visible;
 }
 {
   
@@ -135,13 +135,13 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
     min-height: 30px;
 }
 
-.ep {
-    min-height: 20px;
-    min-width: auto;
+.et {
+  min-height: 20px;
+  min-width: auto;
 }
 
 .ct {
-    min-height: 30px;
+  min-height: 30px;
 }
 
 
@@ -179,21 +179,21 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
 }
 
 @-moz-keyframes blink {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 @-webkit-keyframes blink {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 @keyframes blink {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 

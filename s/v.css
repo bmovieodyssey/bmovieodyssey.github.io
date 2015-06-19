@@ -79,8 +79,8 @@ input[type=checkbox] {
 [for="menutape"] {
   background: rgba(0,0,255,1);
   position: absolute;
-  padding: 10px 0 10px 0;
-  left: -140px;
+  padding: 5px 20px 0 0;
+  left: -170px;
   width: 140px;
 }
 
@@ -128,16 +128,18 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
 .tp {
   min-height: 15px;
   min-width: auto;
-  margin-left: 12.5%;
+  margin-left: 14%;
 }
 
 .ab {
-    min-height: 30px;
+  min-height: 30px;
 }
 
 .et {
-  min-height: 20px;
-  min-width: auto;
+  height: 30px;
+  min-width: 100%;
+  margin-left: -150%;
+  background-color: #0000ff;
 }
 
 .ct {

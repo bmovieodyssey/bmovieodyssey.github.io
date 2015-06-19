@@ -1,5 +1,5 @@
 body {
-  background-color: #252525;
+  background-color: black;
   margin: 0;
   padding: 0;
   min-width: 640px;
@@ -32,7 +32,6 @@ background-size: cover;
   max-width: 10%;
   max-height: 5%;
   overflow: hidden;
-  z-index: 10;
   background: #0000FF;
   display: block;
 }
@@ -40,14 +39,15 @@ background-size: cover;
 .play {
   height: 35px;
   position: absolute;
-  z-index: 45;
 }
 
 .mute {
-  max-height: 40px;
-  max-width: auto;
+  max-height: 35px;
+  width: auto;
+  height: auto;
+  min-height: 15px;
   float: right;
-  margin: 3% 0 0 0;
+  margin: 3% 3% 0 0;
 
 
 }
@@ -59,7 +59,6 @@ background-size: cover;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   position: absolute;
-  z-index: 0;
   visibility: hidden;
   display: none
 }
@@ -165,10 +164,13 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
 }
 
 .blink {
-  height: 35px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  min-height: 15px;
   margin-top: 25%;
   margin-left: 40%;
-  position: fixed;
+  position: absolute;
   background-color: #0000ff;
   animation-name: blink;
   animation: blink 1s step-start 0s infinite;
@@ -194,28 +196,29 @@ input[type=checkbox]:checked ~ [for="menutape"] span:last-of-type {
     100% { opacity: 1.0; }
 }
 
+
+/*footer*/
+
 .other ul {
   position: fixed;
+  height: 5%;
   width: 100%;
-  overflow: hidden;
   padding: 0;
-  margin: 0;
-  top: 96%;
+  margin-top: 48%;
   list-style: none;
   text-align: center;
-  z-index: 20;
+
 }
 
 .other ul li{
   display: inline-block;
-    margin: 0 2em 0 1em;
-    padding: 0 2em 0 1em;
-    z-index: 50;
+    margin: 0 10px 10px 10px;
+    padding: 0 10px 0 10px;
+ 
 
 }
 
 
 .footer {
-  height: 26px;
-  top: 95%;
+  height: 22px;
 }
